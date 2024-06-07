@@ -1,0 +1,72 @@
+/* styles.css */
+
+:root {
+    --texto-titulo: hsl(47, 82%, 49%);
+    --cor-de-fundo: hsl(0, 0%, 95%);
+    --cor-da-borda: hsl(0, 0%, 0%);
+    --cor-do-texto: hsl(0, 0%, 7%);
+  }
+  
+  body {
+    font-family: 'Figtree', sans-serif;
+    font-size: 16px;
+    color: var(--cor-do-texto);
+    background-color: var(--cor-de-fundo);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .card {
+    background-color: var(--cor-de-fundo);
+    border: 1px solid var(--cor-da-borda);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    max-width: 400px;
+    text-align: left;
+    margin-bottom: 10rem; /* Adicione margem para separar cartão e atribuição */
+  }
+  
+  .card h1 {
+    color: var(--texto-titulo);
+    font-weight: 800;
+    margin-bottom: 1rem;
+  }
+  
+  .card h2 {
+    color: var(--cor-do-texto);
+    font-weight: 800;
+    margin: 1.5rem 0 1rem;
+  }
+  
+  .card p {
+    color: var(--cor-do-texto);
+    margin-bottom: 1rem;
+  }
+  
+ .attribution {
+    font-size: 15px;
+    text-align: left;
+    width: none; /* Certifique-se de que a atribuição ocupe toda a largura do contêiner */
+    margin-bottom: -20rem;
+  }
+    
+  /* Media Queries */
+  @media (max-width: 375px) {
+    /* Estilos para dispositivos móveis */
+  }
+  
+  @media (min-width: 1440px) {
+    /* Estilos para desktop */
+  }
